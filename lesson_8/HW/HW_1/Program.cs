@@ -51,20 +51,6 @@ void OrderElMin(int[,] arr)
     }
 }
 
-// int[] FrequencyDict(int[,] arr, int max_num)
-// {
-//     int[] freq = new int[max_num];
-
-//     foreach (int item in arr) freq[item] += 1;
-//     return freq;
-// }
-
-// void PrintMass(int[] arr)
-// {
-//     for (int i = 0; i < arr.Length; i++)
-//         Console.WriteLine($"{i} meets: {arr[i]}");
-//     Console.WriteLine();
-// }
 
 Console.Write("Enter the number of rows: ");
 int row_num = int.Parse(Console.ReadLine()!);
@@ -76,8 +62,5 @@ int stop = int.Parse(Console.ReadLine()!);
 int[,] mass = MassNums(row_num, column_num, start, stop);
 
 Print(mass);
-
-// int[] new_mass = OrderElMin(mass);
-// PrintMass(new_mass);
 OrderElMin(mass);
 Print(mass);
